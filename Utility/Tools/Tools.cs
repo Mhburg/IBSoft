@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using IBApi;
+
+namespace Utility
+{
+    public static class Tools
+    {
+        public static Contract TGetStockForQuery(string symbol, string exchange = "SMART", string currency = "USD")
+        {
+            Contract contract = new Contract();
+            contract.Symbol = symbol;
+            contract.Exchange = exchange;
+            contract.Currency = currency;
+            contract.SecType = "STK";
+            return contract;
+        }
+
+        public static Contract TGetOptionForQuery(string symbol, string expiry, string exchange = "SMART", string currency = "USD")
+        {
+            Contract contract = new Contract();
+            contract.Symbol = symbol;
+            contract.Exchange = exchange;
+            contract.Currency = currency;
+            contract.Expiry = expiry;
+            contract.SecType = "OPT";
+            return contract;
+        }
+    }
+}
