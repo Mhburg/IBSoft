@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EFHelper.cs" />
+    <Compile Include="GeneralDBC\SPYDBC.cs" />
     <Compile Include="ICount.cs" />
     <Compile Include="OPTDBC\SPYOPTDBC.cs" />
     <Compile Include="STKDBC\SPYSTKDBC.cs" />

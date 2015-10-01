@@ -57,8 +57,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RTVolume.cs" />
     <Compile Include="TickerIdRef.cs" />
+    <Compile Include="TickGeneric.cs" />
     <Compile Include="TickPrice.cs" />
     <Compile Include="TickSize.cs" />
+    <Compile Include="TickString.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

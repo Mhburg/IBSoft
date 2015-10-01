@@ -9,6 +9,8 @@ namespace Utility
 {
     public static class Tools
     {
+        public static readonly long TicksFrom70 = new DateTime(1970, 1, 1).Ticks;
+
         public static Contract TGetStockForQuery(string symbol, string exchange = "SMART", string currency = "USD")
         {
             Contract contract = new Contract();

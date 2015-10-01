@@ -34,7 +34,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,11 +54,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\IOPTRepo.cs" />
+    <Compile Include="Interface\IRepo.cs" />
     <Compile Include="Interface\ISTKRepo.cs" />
+    <Compile Include="Interface\IStrategy.cs" />
+    <Compile Include="Repo\SPYRepo.cs" />
     <Compile Include="Repo\SPYSTKOPTRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WrapperImpl\EWrapperImpl.cs" />
-    <Compile Include="WrapperImpl\STKWrapper.cs" />
+    <Compile Include="WrapperImpl\GenericWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClassObjectLibrary\DAL.csproj">
@@ -64,6 +76,14 @@
       <Project>{7b18096d-0d5e-466f-bb23-2d14b64af5de}</Project>
       <Name>Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{1a41c636-b18d-4313-8256-77f5d547f689}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
