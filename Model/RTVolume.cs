@@ -29,7 +29,17 @@ namespace Model
         [Required]
         [Column(TypeName = "bit")]
         public bool Single_Trade_Flag { get; set; }
-        [Required]
-        public long TimeStamp { get; set; }
+
+        public RTVolume(int ticker_Id, string value)
+        {
+            var tmpValues = value.Split(';');
+            Ticker_Id = ticker_Id;
+            Price = decimal.Parse(tmpValues[0]);
+            LastTradeSize = int.Parse(tmpValues[1]);
+            LastTradeTime = long.Parse(tmpValues[2]);
+            Volumn = long.Parse(tmpValues[3]);
+            VWAP = decimal.Parse(tmpValues[4]);
+            Single_Trade_Flag = bool.Parse(tmpValues[5]);
+        }
     }
 }

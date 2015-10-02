@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using IBApi;
 using System.Threading;
+using BOL;
 
 namespace Samples
 {

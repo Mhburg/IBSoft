@@ -8,6 +8,7 @@ using IBApi;
 using System.Threading;
 using IBSamples;
 using System.Collections.Generic;
+using BOL;
 
 namespace Samples
 {

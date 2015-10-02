@@ -1,0 +1,10 @@
+D:\Interactive broker\AutoTradeV3\Model\bin\Debug\Model.dll.config
+D:\Interactive broker\AutoTradeV3\Model\bin\Debug\Model.dll
+D:\Interactive broker\AutoTradeV3\Model\bin\Debug\Model.pdb
+D:\Interactive broker\AutoTradeV3\Model\bin\Debug\EntityFramework.dll
+D:\Interactive broker\AutoTradeV3\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Interactive broker\AutoTradeV3\Model\bin\Debug\EntityFramework.xml
+D:\Interactive broker\AutoTradeV3\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Interactive broker\AutoTradeV3\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Interactive broker\AutoTradeV3\Model\obj\Debug\Model.dll
+D:\Interactive broker\AutoTradeV3\Model\obj\Debug\Model.pdb

@@ -95,6 +95,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BOL\BOL.csproj">
+      <Project>{993f57f5-85e2-493c-a9d8-518a27064ca8}</Project>
+      <Name>BOL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClassObjectLibrary\DAL.csproj">
       <Project>{5f0df07d-e750-42ab-a4ac-7a7417ea870d}</Project>
       <Name>DAL</Name>

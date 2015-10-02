@@ -1,0 +1,1 @@
+D:\Interactive broker\AutoTradeV3\ClassObjectLibrary\obj\Debug\DAL.csprojResolveAssemblyReference.cache
